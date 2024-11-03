@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Constants from './HomePage';
 import Account from './AccountPage/Account'; 
 import Inbox from './InboxPage/Inbox';
+import './App.css';
 
 
 function App() {
   return (
+    <body>
     <Router>
       <Constants/>
       <Routes>
@@ -14,6 +16,7 @@ function App() {
         {/* Add other routes here */}
       </Routes>
     </Router>
+    </body>
   );
 }
 

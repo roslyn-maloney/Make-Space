@@ -2,9 +2,7 @@
 export default function Creator(){
     return(
         <div>
-            Aarushi Thejaswi
-            Isabella Borda 
-            Roslyn Maloney
+            <p>Created by Aarushi Thejaswi, Isabella Borda, and Roslyn Maloney</p>
         </div>
     );
 }
