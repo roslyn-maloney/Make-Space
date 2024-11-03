@@ -3,7 +3,7 @@
 .grid {
     display: grid;
     /*margin: 3em;*/
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: 2fr;
     height: 10%;
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fill, minmax());

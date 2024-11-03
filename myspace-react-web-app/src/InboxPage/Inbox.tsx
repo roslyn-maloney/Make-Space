@@ -1,4 +1,4 @@
-import Creator from "../Constants/Creators";
+import Creator from "../HomePage/Creator";
 
 export default function Inbox(){
     return(
