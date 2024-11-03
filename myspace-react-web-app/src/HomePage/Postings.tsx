@@ -8,7 +8,7 @@ export default function Posting() {
           className="wd-home-post-link"
           to="/Make-Space/Post123">
           {/* the image of the post */}
-          <img src="/images/mirror.png" width={200} />
+          
           <div>
             <h5>Full Length Mirror</h5>
             <p className="wd-home-post-title">A full length mirror that ...</p>
