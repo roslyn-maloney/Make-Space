@@ -1,8 +1,9 @@
 import Creator from "../HomePage/Creators";
-export default function Account(){
+
+export default function Inbox(){
     return(
         <div>
-            hello
+            Boo
             <Creator/>
         </div>
     );

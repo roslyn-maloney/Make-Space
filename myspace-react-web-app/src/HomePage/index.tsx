@@ -1,11 +1,11 @@
-import NavigationBar from "./NavigationBar";
 import Creator from "./Creators";
+import NavigationBar from "./NavigationBar";
 
-export default function Home() {
+// this represents 
+export default function Constants() {
     return (
         <div>
         <NavigationBar/>
-        <Creator/>
         </div>
     );
 }
