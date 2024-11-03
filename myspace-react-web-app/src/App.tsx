@@ -7,19 +7,19 @@ import "./App.css"
 
 function App() {
   return (
-    <body>
-      <HashRouter>
-        <div id="wd-kanbas">
-          <NavigationBar />
-          <Routes>
-            <Route path="/MakeSpace/Inbox" element={<Inbox />} />
-            <Route path="MakeSpace/Adding" element={<Adding />} />
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </div>
-      </HashRouter>
-    </body>
+
+    <HashRouter>
+      <div id="wd-kanbas">
+        <NavigationBar />
+        <Routes>
+          <Route path="/MakeSpace/Inbox" element={<Inbox />} />
+          <Route path="MakeSpace/Adding" element={<Adding />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
+    </HashRouter>
+
   );
 }
 
