@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*NAVIGATION BAR*/
 .grid {
     display: grid;
     /*margin: 3em;*/
-    grid-template-columns: 2fr;
-    height: 10%;
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fill, minmax());
+    grid-auto-columns: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    /*height: 10%;*/
+    grid-gap: 10px;
+    /*grid-template-columns: repeat(auto-fill, minmax());*/
     justify-content: center;
+    align-items: center;
 }
 
 .navtext {
@@ -36,7 +38,7 @@ input {
     border-style: none;
     padding: 10px;
     width: 40%;
-    grid-column: 2 / 6;
+    grid-column: span 4;
     justify-content: center;
     align-items: center;
     height: 20%;
@@ -46,23 +48,109 @@ p {
     font-family: "Albert Sans", sans-serif;
     font-size: 17px;
     color: #FFFFFF;
-    grid-column: 8 / 9;
+    /*grid-column: 8 / 9;*/
     justify-content: center;
     text-align: center;
     align-items: center;
+    width: 60%;
 }
 
 .logo {
     /*margin-right: 4em;*/
-    grid-column: 1 / 2;
+    /*grid-column: 1 / 2;*/
     justify-content: center;
     align-items: center;
 }
 
 .pfp {
-    /*width: 5%;
-    height: 10%;*/
+    width: 60%;
+    height: 60%;
     grid-column: 9 / 10;
     justify-content: center;
     align-items: center;
+}
+
+/*FILTER*/
+.filters {
+    /*padding-left: 2em;
+    padding-right: 2em;*/
+    padding: 2em;
+}
+
+button {
+    background-color: #8A76F3;
+    color: #FFFFFF;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 17px;
+    border-radius: 17px;
+    margin-left: .5em;
+    margin-right: .5em;
+    padding: 10px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #CCC5F1;
+}
+
+/*POSTINGS*/
+.gridContainer {
+    display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 8em 8em;
+    grid-template-rows: 10em 3em 3em 3em;
+    padding: 10px;
+    background-color: #363449;
+    border-radius: 17px;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Albert Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-style: normal; 
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-family: "Albert Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.itemImg {
+    grid-column: span 2;
+}
+
+.itemDesc {
+    grid-column: span 2;
+    /*padding: 1em;*/
+    justify-content: center;
+}
+
+.sectionHeader {
+    font-family: "Albert Sans", sans-serif;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 1.2em;
 }

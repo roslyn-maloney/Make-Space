@@ -5,7 +5,7 @@ import './HomePage.css';
 export default function NavigationBar() {
   return (
     <nav className="grid">
-      <img className="logo" src="/Assets/Component1.svg" alt="logo"/>
+      <Link to="/MakeSpace/App" className="navtext"><img className="logo" src="/Assets/Component1.svg" alt="logo"/></Link>
       <input type="text" placeholder="search" />
       <Link to="/MakeSpace/Adding" className = "navtext">Add Listing</Link>
       <Link to="/MakeSpace/Inbox" className = "navtext">Messages</Link>

@@ -2,20 +2,29 @@ import {Link} from "react-router-dom";
 
 export default function Posting() {
   return (
-    <div id="wd-home-postings">
-      <div className="wd-home-post">
-        <Link
-          className="wd-home-post-link"
-          to="/Make-Space/Post123">
-          {/* the image of the post */}
-          
-          <div>
-            <h5>Full Length Mirror</h5>
-            <p className="wd-home-post-title">A full length mirror that ...</p>
-            <button> Label </button><button> Label </button>
+    <body>
+    <h1 className="sectionHeader">Recommended For You</h1>
+       <Link to="/Make-Space/Post123" className="gridContainer">
+          <div className="card">
+            <img className="itemImg" src="" alt="item img"/>
+            <h1 style={{textAlign: "left", marginLeft: "10px"}}>Item Name</h1>
+            <h1 style={{textAlign: "right", marginRight: "10px"}}>$0</h1>
+            <h3 className="itemDesc" style={{marginLeft: "10px"}}>
+              Item Description...</h3>
+            <button> Tag 1 </button><button> Tag2 </button>
           </div>
         </Link>
-      </div>
-    </div>
+      <h1 className="sectionHeader">Latest</h1>
+      <Link to="/Make-Space/Post123" className="gridContainer">
+          <div className="card">
+            <img className="itemImg" src="" alt="item img"/>
+            <h1 style={{textAlign: "left", marginLeft: "10px"}}>Item Name</h1>
+            <h1 style={{textAlign: "right", marginRight: "10px"}}>$0</h1>
+            <h3 className="itemDesc" style={{marginLeft: "10px"}}>
+              Item Description...</h3>
+            <button> Tag 1 </button><button> Tag2 </button>
+          </div>
+      </Link>
+    </body>
   );
 }
