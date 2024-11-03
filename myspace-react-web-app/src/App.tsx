@@ -1,19 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Constants from './HomePage';
-import Account from './AccountPage/Account'; 
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import NavigationBar from './Constants/NavigationBar';
+import Home from './HomePage';
 import Inbox from './InboxPage/Inbox';
-
+import Post from './PostPage/Post';
+import Adding from "./AddingPage/Adding";
 
 function App() {
   return (
-    <Router>
-      <Constants/>
-      <Routes>
-        <Route path="/MakeSpace/Account" element={<Account />} />
-        <Route path="/MakeSpace/Inbox" element={<Inbox/>} />
-        {/* Add other routes here */}
-      </Routes>
-    </Router>
+    <HashRouter>
+      <div id="wd-kanbas">
+        <NavigationBar />
+        <Routes>
+          <Route path="/MakeSpace/Post123/:cid/*" element={<Post />} />
+          <Route path="/MakeSpace/Inbox" element={<Inbox />} />
+          <Route path="MakeSpace/Adding" element={<Adding />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 
