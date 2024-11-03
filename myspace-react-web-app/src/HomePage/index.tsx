@@ -1,11 +1,13 @@
-import Creator from "./Creators";
-import NavigationBar from "./NavigationBar";
+import Filter from "./Filter";
+import Postings from "./Postings";
+import Post from "../PostPage/Post";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// this represents 
-export default function Constants() {
+export default function Home() {
     return (
         <div>
-        <NavigationBar/>
+            <Filter />
+            <Postings />
         </div>
     );
 }
